@@ -15,9 +15,9 @@ describe("test index", function(){
 
     it('Test lorem dolor', function() {
         
-        let result = naming.lorem.dolor('sit').text();
+        let result = naming.lorem.dolor(naming.sit.text()).text();
         
-        let expected = 'lorem dolor(sit)';
+        let expected = 'lorem dolor( sit)';
         expect(expected).to.eql(result)
     })
 
