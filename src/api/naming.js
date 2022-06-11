@@ -17,7 +17,7 @@ class Naming {
         return this;
     }
 
-    text(text) {};
+    text() {};
 }
 
 module.exports.Naming = Naming;
