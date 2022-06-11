@@ -18,7 +18,7 @@ class ParamNaming extends Naming {
         }
         
         if (this._param) {
-            result.push(`${this.value}(${this._param})`);
+            result.push(`${this.value}(${this._param.text()})`);
         } else {
             result.push(`${this.value}()`)
         }

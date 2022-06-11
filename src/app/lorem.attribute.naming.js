@@ -11,8 +11,8 @@ class LoremAttributeNaming extends AttributeNaming {
         return ipsum(this.text());
     }
 
-    dolor(value) {
-        return dolor(this.text()).param(value);
+    dolor(naming) {
+        return dolor(this.text()).param(naming);
     }
 }
 
