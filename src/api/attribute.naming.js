@@ -8,9 +8,9 @@ class AttributeNaming extends Naming {
             result.push(this.prefix);
         }
         if (this.separator) {
-            result.push(this.separator);
+            result.push(this._separator);
         }
-        result.push(this.value);
+        result.push(this._value);
         
         return result.join('');
     }

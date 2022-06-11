@@ -7,9 +7,13 @@ class Naming {
 
     onInit(){};
 
-    config(value, separator) {
-        this.value = value;
-        this.separator = separator;
+    value(value) {
+        this._value = value;
+        return this;
+    }
+
+    separator(separator) {
+        this._separator = separator;
         return this;
     }
 

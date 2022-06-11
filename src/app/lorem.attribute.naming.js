@@ -4,7 +4,8 @@ const { dolor } = require('./dolor.param.naming');
 
 class LoremAttributeNaming extends AttributeNaming {
     onInit() {
-        this.config('lorem');
+        // this.config('lorem');
+        this.value('lorem');
     }
 
     get ipsum() {

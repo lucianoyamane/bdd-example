@@ -14,13 +14,13 @@ class ParamNaming extends Naming {
         }
         
         if (this.separator) {
-            result.push(this.separator);
+            result.push(this._separator);
         }
         
         if (this._param) {
-            result.push(`${this.value}(${this._param.text()})`);
+            result.push(`${this._value}(${this._param.text()})`);
         } else {
-            result.push(`${this.value}()`)
+            result.push(`${this._value}()`)
         }
         return result.join('');
     }

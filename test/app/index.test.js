@@ -13,15 +13,15 @@ describe("test index", function(){
         expect(expected).to.eql(result)
     })
 
-    it('Test lorem dolor', function() {
+    it('Test override separator', function() {
         
-        let result = naming.lorem.dolor(naming.sit).text();
+        let result = naming.lorem.dolor(naming.sit.separator('_')).text();
         
-        let expected = 'lorem dolor( sit)';
+        let expected = 'lorem dolor(_sit)';
         expect(expected).to.eql(result)
     })
 
-    it('Test sit lorem dolor', function() {
+    it('Test naming as param', function() {
         
         let result = naming.lorem.dolor(naming.lorem.ipsum).text();
         
